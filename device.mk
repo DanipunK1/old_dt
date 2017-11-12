@@ -260,6 +260,7 @@ PRODUCT_PACKAGES += \
     init.raphael.rc \
     init.raphael.wlan.rc \
     init.recovery.qcom.rc \
+    init.safailnet.rc \
     init.target.rc \
     ueventd.qcom.rc
 
