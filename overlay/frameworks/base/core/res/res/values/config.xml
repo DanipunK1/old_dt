@@ -607,4 +607,7 @@
 
     <!-- Enable dual LTE capability support-->
     <bool name="config_dual_LTE_capability">true</bool>
+
+    <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
+    <bool name="config_defaultRingtonePickerEnabled">true</bool>
 </resources>
