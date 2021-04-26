@@ -1,0 +1,10 @@
+android_app_import {
+	name: "OPLauncherReleases",
+	overrides: ["Launcher3", "Launcher3QuickStep"],
+	apk: "system/priv-app/OPLauncherReleases/OPLauncherReleases.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}

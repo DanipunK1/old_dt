@@ -21,6 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# OPLauncher
+ifeq ($(BUILD_WITH_OPLAUNCHER),true)
+$(call inherit-product, $(LOCAL_PATH)/OPLauncher/oplauncher.mk)
+endif
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
