@@ -18,8 +18,9 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common candy stuff.
 $(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
-#Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1080
+# Boot animation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2340
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := candy_raphael
