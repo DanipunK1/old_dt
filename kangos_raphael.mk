@@ -14,31 +14,22 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common CHERISH stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
-
-# Gapps
-CHERISH_WITHGAPPS := true
-TARGET_INCLUDE_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
-# Face Unlock Flag
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Inherit some common kangos stuff.
+$(call inherit-product, vendor/kangos/config/common.mk)
 
 #Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Maintainer
-CHERISH_BUILD_TYPE := OFFICIAL
-
-PRODUCT_GENERIC_PROPERTIES += \
-    ro.cherish.maintainer=DanipunK1
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.kangos.maintainer=DanipunK1 \
+  ro.kangos.cpu=SM8150
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cherish_raphael
+PRODUCT_NAME := kangos_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro

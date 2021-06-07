@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_raphael.mk
+    $(LOCAL_DIR)/kangos_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_raphael-user \
-    cherish_raphael-userdebug \
-    cherish_raphael-eng
+    kangos_raphael-user \
+    kangos_raphael-userdebug \
+    kangos_raphael-eng
