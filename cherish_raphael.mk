@@ -33,6 +33,9 @@ CHERISH_BUILD_TYPE := OFFICIAL
 PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer=DanipunK1
 
+# FOD animations
+TARGET_WANTS_FOD_ANIMATIONS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cherish_raphael
 PRODUCT_DEVICE := raphael
