@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_raphael.mk
+    $(LOCAL_DIR)/colt_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_raphael-user \
-    spark_raphael-userdebug \
-    spark_raphael-eng
+    colt_raphael-user \
+    colt_raphael-userdebug \
+    colt_raphael-eng
