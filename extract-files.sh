@@ -64,6 +64,10 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;            
+
+        vendor/etc/init/init.batterysecret.rc | vendor/etc/init/init.mi_thermald.rc)
+            sed -i "/seclabel/d" "${2}"
+            ;;
     esac
 }
 
