@@ -101,9 +101,6 @@ camera.disable_zsl_mode=true
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
-# Dalvik
-dalvik.vm.dex2oat64.enabled=true
-
 # DRM
 drm.service.enabled=true
 
