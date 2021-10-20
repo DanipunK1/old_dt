@@ -145,8 +145,7 @@ PRODUCT_COPY_FILES += \
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat64.enabled=true \
-    dalvik.vm.heapgrowthlimit=256m
+    dalvik.vm.dex2oat64.enabled=true
 
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
