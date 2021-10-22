@@ -1046,7 +1046,6 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
-vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
@@ -1055,21 +1054,27 @@ vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
 vendor/lib64/liblistensoundmodel2.so
-vendor/lib64/libmulawdec.so
 
 # Listen (sound_trigger primary)
 vendor/lib/hw/sound_trigger.primary.msmnile.so
 vendor/lib64/hw/sound_trigger.primary.msmnile.so
 
 # Media
+system_ext/lib/libmmosal.so
+system_ext/lib/libmmparser_lite.so
+system_ext/lib64/libmmosal.so
+system_ext/lib64/libmmparser_lite.so
+vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc
-vendor/bin/vppservice
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
+vendor/lib/libdsd2pcm.so
 vendor/lib/libFlacSwDec.so
 vendor/lib/libI420colorconvert.so
--vendor/lib/libMpeg4SwEncoder.so
+vendor/lib/libmm-color-convertor.so
+vendor/lib/libMpeg4SwEncoder.so
+vendor/lib/libmulawdec.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/libOmxAlacDecSw.so
@@ -1082,11 +1087,10 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVdec.so
--vendor/lib/libOmxSwVencMpeg4.so
+vendor/lib/libOmxSwVencMpeg4.so
+vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib/libmm-color-convertor.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/libswvdec.so
 vendor/lib/libvppclient.so
@@ -1102,7 +1106,9 @@ vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
 vendor/lib64/libI420colorconvert.so
+vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libMpeg4SwEncoder.so
+vendor/lib64/libmulawdec.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libOmxAlacDecSw.so
@@ -1117,7 +1123,6 @@ vendor/lib64/libOmxSwVdec.so
 vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
-vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libswvdec.so
 vendor/lib64/libvppclient.so
@@ -1129,14 +1134,6 @@ vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
-
-# Media (C2)
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/lib/libqcodec2.so
-vendor/lib/libcodec2_vndk.so
-vendor/lib64/libqcodec2.so
-vendor/lib64/libcodec2_vndk.so
 
 # MDM
 vendor/bin/ks
@@ -2018,8 +2015,6 @@ system_ext/bin/wfdservice|633136fd78d4e7ad99e18e060c44ebe598271c84
 system_ext/etc/init/wfdservice.rc|aab7aecb01c359fd521c99957c4d5bfd16a8dfae
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|828999946f9dfef98f17f42a1c8daba47c2c442d
 system_ext/etc/seccomp_policy/wfdservice.policy|ff82c22afdfc6a1f6f19db0d446f97e184d40043
-system_ext/lib/libmmosal.so|e29bdf82903e2293dc3ee74a2b9d69a7f1df25dc
-system_ext/lib/libmmparser_lite.so|b1cd09b8d73ce5a0e7357c6f50719233224f28bc
 system_ext/lib/libmmrtpdecoder.so|0b41da1c84e4a5abc01b4dba18a121f73ad0c409
 system_ext/lib/libmmrtpencoder.so|a14a07eefd96889a7287640341d9fff0a7a4bb11
 system_ext/lib/libwfdavenhancements.so|b5339128aa1465420774b9056fe5b7a246d52048
@@ -2039,8 +2034,6 @@ system_ext/lib/libwfduibcsinkinterface.so|36e368b2e8def1ff8b3f75fa38fbe64299f275
 system_ext/lib/libwfduibcsrc.so|ec958ca005c144ddad7b99f75400ee3193c9513f
 system_ext/lib/libwfduibcsrcinterface.so|8726f547220594eb7c726ac8a809cbf5d5c785f5
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|f6fa6b9722192c93ff76da72b009044a8ffcfb3b
-system_ext/lib64/libmmosal.so|bf992fb3f6394d0da09279aa496e44e10a149264
-system_ext/lib64/libmmparser_lite.so|da37a5e52a05f17d90b84154db6bf8d8d8b4d03e
 system_ext/lib64/libmmrtpdecoder.so|b357af14455971d9f126a109d0214b63661dba40
 system_ext/lib64/libmmrtpencoder.so|31bdf1aeb6f5c183fc9fb2e63acc3a42f79759fb
 system_ext/lib64/libwfdclient.so|7df3af4aac287c8e774605a6cfae840d4536ed06
@@ -2069,7 +2062,6 @@ vendor/etc/seccomp_policy/wfdvndservice.policy|b46f0c22a1f9b65c6750205e161c0a3f8
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy|f113f27e0e301a18baf0ade08c23071a27c7dc52
 vendor/etc/wfdconfig.xml|9e13371f7ae509cc0bbb3f2ace93c5ea5d87bf0f
 vendor/lib/libFileMux_proprietary.so|1e125137fcc2c1843cc14e3ec34fc1068fc6bc14
-vendor/lib/libOmxVideoDSMode.so|fa1fbe8ee42b0e331f758874cc1fb817044da5d8
 vendor/lib/libmiracast.so|a6b7f4c27d9b8947183b90dd25f78dcdc619690e
 vendor/lib/libmmrtpdecoder_proprietary.so|227a26b9ec9ee6f2dc95de47b713b215e8b6c93e
 vendor/lib/libmmrtpencoder_proprietary.so|d0aec32b8e565912ecc475bad40ed626ac1ee04d
