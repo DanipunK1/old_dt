@@ -36,3 +36,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # CherishOS stuff
 CHERISH_BUILD_TYPE := OFFICIAL
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=DanipunK1
